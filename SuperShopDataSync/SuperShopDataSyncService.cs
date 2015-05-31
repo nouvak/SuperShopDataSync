@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace SuperShopDataSync
 {
-    public partial class Service1 : ServiceBase
+    public partial class SuperShopDataSyncService : ServiceBase
     {
-        public Service1()
+        public SuperShopDataSyncService()
         {
             InitializeComponent();
         }

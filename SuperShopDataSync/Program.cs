@@ -17,7 +17,7 @@ namespace SuperShopDataSync
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[] 
             { 
-                new Service1() 
+                new SuperShopDataSyncService() 
             };
             ServiceBase.Run(ServicesToRun);
         }

@@ -1,6 +1,6 @@
 ﻿namespace SuperShopDataSync
 {
-    partial class Service1
+    partial class SuperShopDataSyncService
     {
         /// <summary> 
         /// Required designer variable.
