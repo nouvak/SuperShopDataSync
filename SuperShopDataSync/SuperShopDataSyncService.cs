@@ -10,8 +10,14 @@ using System.Threading.Tasks;
 
 namespace SuperShopDataSync
 {
+    /**
+     * This service uses the following REST API client for accessing the Magento REST API:
+     * https://github.com/nickvane/Magento-RestApi
+     */
     public partial class SuperShopDataSyncService : ServiceBase
     {
+        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
         public SuperShopDataSyncService()
         {
             InitializeComponent();
@@ -19,10 +25,12 @@ namespace SuperShopDataSync
 
         protected override void OnStart(string[] args)
         {
+            log.Info("Starting SuperShop data sync service.");
         }
 
         protected override void OnStop()
         {
+            log.Info("Stopping SuperShop data sync service.");
         }
     }
 }
